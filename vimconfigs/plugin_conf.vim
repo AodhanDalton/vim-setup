@@ -1,11 +1,4 @@
 """"""""""""""""""""""""""""""
-" Load pathogen paths
-""""""""""""""""""""""""""""""
-let s:vim_runtime = expand('<sfile>:p:h')."/.."
-call pathogen#infect(s:vim-setup.'/my_plugins/{}')
-call pathogen#helptags()
-
-""""""""""""""""""""""""""""""
 " bufExplorer plugin
 """"""""""""""""""""""""""""""
 let g:bufExplorerDefaultHelp=0
