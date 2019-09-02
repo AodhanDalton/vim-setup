@@ -3,7 +3,7 @@
 """"""""""""""""""""""""""""""
 "   General
 """"""""""""""""""""""""""""""
-set history = 100
+set history=100
 
 filetype plugin on 
 filetype indent on
@@ -22,7 +22,7 @@ let $LANG='en'
 set wildmenu
 
 " Ignore comiled files
-et wildignore=*.o,*~,*.pyc
+set wildignore=*.o,*~,*.pyc
 if has("win16") || has("win32")
     set wildignore+=.git\*,.hg\*,.svn\*
 else
@@ -42,7 +42,7 @@ set whichwrap+=<,>,h,l
 
 " Highlight search results & dont redraw while executing macros
 set hlsearch
-set lazydraw
+set lazyredraw
 
 set showmatch
 set mat=2
@@ -99,7 +99,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " Status line
 """""""""""""""""""""""""""
 "ALoways show the status line
-set kaststatus=2
+set laststatus=2
 
 "Format the status line
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
