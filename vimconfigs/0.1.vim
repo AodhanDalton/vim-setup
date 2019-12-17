@@ -5,6 +5,8 @@
 """"""""""""""""""""""""""""""
 set history=100
 
+set number
+
 filetype plugin on 
 filetype indent on
 
